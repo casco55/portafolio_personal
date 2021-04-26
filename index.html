@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- ESTILOS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e18c4fac07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
    
@@ -14,16 +15,16 @@
 
     
    
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top py-1" id="menu-navegacion">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top py-1" >
         <div class="container">
             <a class="navbar-brand">Brand</a>
             <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="my-nav" class="collapse navbar-collapse">
+            <div id="menu-navegacion" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#my-nav">Inicio <span class="sr-only">Barra de navegación</span></a>
+                        <a class="nav-link active" href="#bienvenida">Inicio <span class="sr-only">Barra de navegación</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre mi <span class="sr-only">nosotros</span></a>
@@ -53,7 +54,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
@@ -72,14 +73,73 @@
                 <div class="col-sm-12 col-md-6 my-auto">
                     <img class="img-thumbnail img-fluid" src="img/blurred-background-coffee-cup-contemporary-908284.jpg" alt="">
                 </div>
-
-
             </div>
-
-
         </div>
+    </section>
+    <section id="testimonios" class="pt-5">
+        <div class="container mt-5 align-items-stretch">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column">
+                    <h2 class="mx-auto">¿Por qué trabajar conmigo?</h2>
+                    <p class="text-justify mx-auto">
+                       Mis clientes, cuando he realizado proyectos como independiente y mis supervisores, cuando he trabajado para distintas empresas, entregan sus testimonio.
+                    </p>
+                   
+                </div>
+                <div class="col-md-6 mx-auto">
+                    
+                        <div id="my-carousel" class="carousel slide img-thumbnail" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#my-carousel" data-slide-to="0"></li>
+                                <li data-target="#my-carousel" data-slide-to="1"></li>
+                                <li data-target="#my-carousel" data-slide-to="2"></li>
+                                
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonio py-5 d-flex flex-column">
+                                        <p class="mx-auto w-75 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas optio cumque tempore quidem assumenda, ullam fugiat sint, quae, dicta hic facilis et numquam nam asperiores omnis corporis praesentium quos a.</p>
+                                        <div class="d-flex flex-column w-25 align-self-end mr-5">
+                                        <cite class="align-self-end">Juan Rivas</cite>
+                                        <small class="align-self-end text-muted">Amperia Group SPA</small>
+                                        </div>                                  
 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonio py-5 d-flex flex-column">
+                                        <p class="mx-auto w-75 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas optio cumque tempore quidem assumenda, ullam fugiat sint, quae, dicta hic facilis et numquam nam asperiores omnis corporis praesentium quos a.</p>
+                                        <div class="d-flex flex-column w-25 align-self-end mr-5">
+                                        <cite class="align-self-end">Juan Rivas</cite>
+                                        <small class="align-self-end text-muted">Amperia Group SPA</small>
+                                        </div>                                  
 
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonio py-5 d-flex flex-column">
+                                        <p class="mx-auto w-75 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas optio cumque tempore quidem assumenda, ullam fugiat sint, quae, dicta hic facilis et numquam nam asperiores omnis corporis praesentium quos a.</p>
+                                        <div class="d-flex flex-column w-25 align-self-end mr-5">
+                                        <cite class="align-self-end">Juan Rivas</cite>
+                                        <small class="align-self-end text-muted">Amperia Group SPA</small>
+                                        </div>                                  
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#my-carousel" data-slide="prev" role="button">
+                                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#my-carousel" data-slide="next" role="button">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
 
    
@@ -87,6 +147,7 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

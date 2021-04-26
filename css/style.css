@@ -11,3 +11,48 @@
 .banner{
     width: 90%;
 }
+.testimonio{
+    height: 250px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10x;
+    height: 10px;
+    bottom: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 25%;
+    background-color:rgba(90, 88, 89, 0.678);
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 10x;
+    height: 10px;
+    bottom: 5px;
+    background-color: rgba(0, 0, 0, 1);
+}
+.carousel-control-prev {
+    left: 2px;
+    border-bottom: 0;
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+}
+.carousel-control-prev:hover {
+    left: 2px;
+    border-bottom: 0;
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+}
+.carousel-control-next {
+    right: 2px;
+    border-bottom: 0;
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+}
+.carousel-control-next:hover {
+    right: 2px;
+    border-bottom: 0;
+    font-size: 20px;
+    color: rgb(14, 13, 13);
+}

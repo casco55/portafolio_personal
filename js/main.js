@@ -2,7 +2,7 @@
 $('body').scrollspy({target: '#menu-navegacion'});
 
 //Scroll suavizado
-$('#menu-navegacion a').on('click', function(event){
+/* $('#menu-navegacion a').on('click', function(event){
     if(this.hash != ""){
         event.preventDefault();
 
@@ -14,4 +14,5 @@ $('#menu-navegacion a').on('click', function(event){
             window.location.hash = hash;
         });
     }
-})
+}) */
+var scroll = new SmoothScroll('a[href*="#"]');
