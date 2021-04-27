@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top py-1" >
         <div class="container">
             <a class="navbar-brand">Brand</a>
-            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" data-target="#menu-navegacion" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="menu-navegacion" class="collapse navbar-collapse">
@@ -33,7 +33,7 @@
                         <a class="nav-link" href="#testimonios">Testimonios <span class="sr-only">testimonios</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#clientes">Clientes <span class="sr-only">testimonios</span></a>
+                        <a class="nav-link" href="#contacto">Contacto <span class="sr-only">testimonios</span></a>
                     </li>
 
                 </ul>
@@ -76,6 +76,19 @@
             </div>
         </div>
     </section>
+
+    <section id="llamado-accion">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-sm-12 col-md-12 text-center text-white">
+                    <h1 class="mt-5">Contactame</h1>
+                    <p class="my-2 my-md-4">Estoy seguro que puedo ser un gran aporte a tu empresa o negocio, tal como lo he sido en mis experiencias anteriores, a través de la construcción de software, se calidad, para la optimización de procesos.</p>
+                    <a href="#contacto" class="btn btn-light btn-lg text-center mb-5">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="testimonios" class="pt-5">
         <div class="container mt-5 align-items-stretch">
             <div class="row">
@@ -88,7 +101,7 @@
                 </div>
                 <div class="col-md-6 mx-auto">
                     
-                        <div id="my-carousel" class="carousel slide img-thumbnail" data-ride="carousel">
+                        <div id="my-carousel" class="carousel slide img-thumbnail py-4" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li class="active" data-target="#my-carousel" data-slide-to="0"></li>
                                 <li data-target="#my-carousel" data-slide-to="1"></li>
@@ -135,12 +148,44 @@
                                 <i class="fas fa-arrow-right" aria-hidden="true"></i>
                                 <span class="sr-only">Next</span>
                             </a>
-                        </div>
-                    
+                        </div>                    
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="contacto">
+        <div class="container">
+            <div class="row py-5 d-flex flex-column">
+                <h2 class="mx-auto mb-5">Contacto</h2>
+                <form method="get" action="">                    
+                    <div class="row col-lg-6 mx-auto d-flex flex-column">
+                        <div class="form-group my-1">
+                            <label for="nombre">Nombre*</label>
+                            <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre">
+                        </div>
+                        <div class="form-group my-1">
+                            <label for="fono">Fono*</label>
+                            <input id="fono" class="form-control" type="text" name="fono" placeholder="Fono">
+                        </div>
+                        <div class="form-group my-1">
+                            <label for="mail">Mail*</label>
+                            <input id="mail" class="form-control" type="text" name="mail" placeholder="Mail">
+                        </div>                                               .
+                        <div class="form-group">
+                            <label for="comentario">Comentario*</label>
+                            <textarea id="comentario" class="form-control" name="" rows="5" placeholder="Por favor, dejame tu comentario"></textarea>
+                        </div>  
+                        <input type="submit" class="btn btn mt-3 w-50 mx-auto boton-formulario" value="Enviar">                          
+                    </div>                                      
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
 
    
     <!-- jquery / popper / bootstrap -->

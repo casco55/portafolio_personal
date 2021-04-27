@@ -15,4 +15,7 @@ $('body').scrollspy({target: '#menu-navegacion'});
         });
     }
 }) */
-var scroll = new SmoothScroll('a[href*="#"]');
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});

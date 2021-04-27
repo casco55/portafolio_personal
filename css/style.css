@@ -56,3 +56,17 @@
     font-size: 20px;
     color: rgb(14, 13, 13);
 }
+#llamado-accion{
+    background: #5e83fd;
+}
+textarea{
+    resize: none;
+}
+.boton-formulario{
+    background-color: #7d9afc; 
+    color: white;
+}
+.boton-formulario:hover{
+    background-color: #5e83fd; 
+    color: white;
+}
