@@ -7,7 +7,9 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/e18c4fac07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/wickedcss.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Bootstrap</title>
    
 </head>
@@ -24,7 +26,7 @@
             <div id="menu-navegacion" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#bienvenida">Inicio <span class="sr-only">Barra de navegación</span></a>
+                        <a class="nav-link active" href="#bienvenida">Inicio <span class="sr-only">Banner Principal</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre mi <span class="sr-only">nosotros</span></a>
@@ -47,8 +49,8 @@
             <div class="card-img-overlay d-flex">
                 <div class="container col-md-9 mx-auto interno d-flex">
                     <div class="row my-auto py-md-2">
-                        <h1 class="mx-auto titulo">Bienvenid@</h1>
-                        <p class="mx-auto text-justify parrafo">Soy Juan Rivas, un desarrollador de software con fuerte expreriencia en la construcción de aplicaciones de gestión para empresas y negocios. Con proyectos realizados para pymes del rubro eléctrico y la construcción.</p>
+                        <h1 class="mx-auto titulo oculto">Bienvenid@</h1>
+                        <p class="mx-auto text-justify parrafo oculto">Soy Juan Rivas, un desarrollador de software con fuerte expreriencia en la construcción de aplicaciones de gestión para empresas y negocios. Con proyectos realizados para pymes del rubro eléctrico y la construcción.</p>
                     </div>
                 </div>
             </div>
@@ -57,7 +59,7 @@
     <section id="about" class="pt-2 pt-md-4">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-6 profesional d-flex flex-column">
+                <div class="col-sm-12 col-lg-6 d-flex flex-column profesional oculto">
                     <h2 class="mt-1 mt-md-4 mx-auto mx-lg-0">Desarrollador de Software</h2>
                     <p class="mt-1 mb-0 text-justify">
                         Durante mi vida laboral, he trabajado tanto de manera independiente como dependiente. <strong>Construyendo, en su totalidad, aplicaciones de gestión de negocios.</strong> También he realizado el back-end de múltiples aplicaciones, páginas web y landings, así como mantención de e-commerce realizados en distintos CMS, como prestashop, Magento y Vtex.                        
@@ -70,20 +72,20 @@
                     </p>
                    
                 </div>
-                <div class="col-sm-12 col-lg-6 my-auto">
+                <div class="col-sm-12 col-lg-6 my-auto imagen-profesional oculto">
                     <img class="img-thumbnail img-fluid" src="img/blurred-background-coffee-cup-contemporary-908284.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="llamado-accion">
+    <section id="llamado-accion" class="oculto">
         <div class="container">
             <div class="row mt-2 mt-md-4">
                 <div class="col-sm-12 col-md-12 text-center text-white accion">
-                    <h1 class="mt-4 mt-md-5">Contactame</h1>
-                    <p class="my-2 my-md-4 text-justify">Estoy seguro que puedo ser un gran aporte a tu empresa o negocio, tal como lo he sido en mis experiencias anteriores, a través de la construcción de software, se calidad, para la optimización de procesos.</p>
-                    <a href="#contacto" class="btn btn-light btn-lg text-center mt-3 mb-5">Contacto</a>
+                    <h1 class="mt-4 mt-md-5 titulo oculto">Contactame</h1>
+                    <p class="my-2 my-md-4 text-justify parrafo oculto">Estoy seguro que puedo ser un gran aporte a tu empresa o negocio, tal como lo he sido en mis experiencias anteriores, a través de la construcción de software, de calidad, para la optimización de procesos.</p>
+                    <a href="#contacto" class="btn btn-light btn-lg text-center mt-3 mb-5 boton oculto">Contacto</a>
                 </div>
             </div>
         </div>
@@ -93,15 +95,15 @@
         <div class="container mt-2 mt-md-5 align-items-stretch">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column testimonios-general">
-                    <h2 class="mx-auto">¿Por qué trabajar conmigo?</h2>
-                    <p class="text-justify mx-auto">
+                    <h2 class="mx-auto titulo oculto">¿Por qué trabajar conmigo?</h2>
+                    <p class="text-justify mx-auto parrafo oculto">
                        Mis clientes, cuando he realizado proyectos como independiente y mis supervisores, cuando he trabajado para distintas empresas, entregan sus testimonio.
                     </p>
                    
                 </div>
                 <div class="col-md-9 mx-auto">
                     
-                        <div id="my-carousel" class="carousel slide img-thumbnail py-5" data-ride="carousel">
+                        <div id="my-carousel" class="carousel slide img-thumbnail py-5 oculto" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li class="active" data-target="#my-carousel" data-slide-to="0"></li>
                                 <li data-target="#my-carousel" data-slide-to="1"></li>
