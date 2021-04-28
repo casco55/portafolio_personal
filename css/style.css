@@ -1,18 +1,76 @@
-.boton-slider{
-    background-color: aliceblue;
-    width:150x;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+/* Banner */
+.banner{
+    width: 90%;    
 }
-.titulo{
+.banner .titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
     color: white;
 }
-.parrafo{
+.banner .parrafo{
     color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.315);
+    line-height: 1.1; 
+    
 }
-.banner{
-    width: 90%;
+/* // Banner */
+/* Descripción profesional */
+.profesional h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 600; 
 }
-.testimonio{
-    height: 250px;
+.profesional p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+}
+
+
+/* // Descripción profesional */
+
+/* Llamado a la acción */
+#llamado-accion{
+    background: #5e83fd;
+}
+.accion h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.accion p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+.accion a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+/* // Llamado a la acción */
+
+/* Testimonios */
+.testimonios-general h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.testimonios-general p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+.testimonio p{
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+.testimonio cite{
+    font-family: 'Oswald', sans-serif;
+}
+.testimonio small{
+    font-family: 'Oswald', sans-serif;
 }
 .carousel-indicators li {
     display: inline-block;
@@ -56,9 +114,30 @@
     font-size: 20px;
     color: rgb(14, 13, 13);
 }
-#llamado-accion{
-    background: #5e83fd;
+
+/* Testimonios */
+
+/* Formulario contacto */
+.formulario-contacto h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
 }
+.formulario-contacto label{
+    font-family: 'Oswald', sans-serif;
+}
+.formulario-contacto input[type=text]{
+    font-family: 'Oswald', sans-serif;
+}
+.formulario-contacto textarea{
+    font-family: 'Oswald', sans-serif;
+}
+.formulario-contacto input[type=submit]{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+
+/* // Formulario contacto */
+
 textarea{
     resize: none;
 }
@@ -69,4 +148,199 @@ textarea{
 .boton-formulario:hover{
     background-color: #5e83fd; 
     color: white;
+}
+
+@media screen and (min-width: 576px) {
+    /* banner */
+    .banner .titulo{
+        font-size: 3em;
+    }  
+    .banner .parrafo{
+        font-size: 1.5em;        
+    }
+    /* //Banner */
+
+    /* Descripción profesional */
+    .profesional h2{
+        font-size: 3em;
+    }
+    .profesional p{
+        font-size: 1.2em;
+    }
+    /* // Descripción profesional */
+
+    /* Llamado a la acción */
+    .accion h1{
+        font-size: 2.5em;
+    }
+    .accion p{
+        font-size: 1.4em;
+    }
+    .accion a{
+        font-size: 1.2em;
+    }
+    /* // Llamado a la acción */
+
+    /* Testimonios */
+    .testimonios-general h2{
+        font-size: 2.5em;
+    }
+    .testimonios-general p{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.4em;
+    }
+    .testimonio p{
+        font-size: 1.3em; 
+    }
+    /* Testimonios */
+
+    /* Formulario contacto */
+    .formulario-contacto h2{
+        font-size: 2.8em;
+    }
+    .formulario-contacto label{
+        font-size: 1.2em;
+    }
+    .formulario-contacto input[type=submit]{
+        font-size: 1.4em;
+    }
+
+    /* // Formulario contacto */
+}
+@media screen and (min-width: 768px) {
+    /* Banner */
+    .banner .titulo{
+        font-size: 7em;
+    }
+    .banner .parrafo{
+        font-size: 2em;              
+    }
+    /* // banner */
+
+    /* Descripción profesional */
+    .profesional h2{
+        font-size: 3em;
+    }
+    .profesional p{
+        font-size: 1.3em;
+    }
+    /* // Descripción profesional */
+
+    /* Llamado a la acción */
+    .accion h1{
+        font-size: 2.8em;
+    }
+    .accion p{
+        font-size: 1.7em;
+    }
+    .accion a{
+        font-size: 1.4em;
+    }
+    /* // Llamado a la acción */
+
+    /* Testimonios */
+    .testimonios-general h2{
+        font-size: 2.8em;
+    }
+    .testimonios-general p{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.6em;
+    }
+    .testimonio p{
+        font-size: 1.4em; 
+    }
+    .testimonio cite{
+        font-size: 1.1em;
+        
+    }
+    
+    /* Testimonios */
+
+    /* Formulario contacto */
+    .formulario-contacto h2{
+        font-size: 3em;
+    }
+    .formulario-contacto label{
+        font-size: 1.4em;
+    }
+    .formulario-contacto input[type=text]{
+        font-size: 1.2em;
+    }
+    .formulario-contacto textarea{
+        font-size: 1.2em;
+    }
+    .formulario-contacto input[type=submit]{
+        font-size: 1.6em;
+    }
+
+    /* // Formulario contacto */
+}
+@media screen and (min-width: 992px) {
+    /* banner */
+    .banner .titulo{
+        font-size: 7em;
+    }
+    .banner .parrafo{
+        font-size: 2em;        
+    }  
+    /* // banner */
+
+    /* Descripción profesional */
+    .profesional h2{
+        font-size: 3em;
+    }
+    .profesional p{
+        font-size: 1.3em;
+    }
+    /* // Descripción profesional */
+
+    /* Llamado a la acción */
+    .accion h1{
+        font-size: 3em;
+    }
+    .accion p{
+        font-size: 2em;
+    }
+    .accion a{
+        font-size: 1.7em;
+    }
+    /* // Llamado a la acción */
+
+     /* Testimonios */
+     .testimonios-general h2{
+        font-size: 3.2em;
+    }
+    .testimonios-general p{
+        font-family: 'Oswald', sans-serif;
+        font-size: 2em;
+    }
+    .testimonio p{
+        font-size: 1.8em; 
+    }
+    .testimonio cite{
+        font-size: 1.5em; 
+    }
+    .testimonio small{
+        font-size: 1.2em; 
+    }
+    /* Testimonios */
+
+    /* Formulario contacto */
+    .formulario-contacto h2{
+        font-size: 4em;
+    }
+    .formulario-contacto label{
+        font-size: 1.7em;
+    }
+    .formulario-contacto input[type=text]{
+        font-size: 1.4em;
+    }
+    .formulario-contacto textarea{
+        font-size: 1.4em;
+    }
+    .formulario-contacto input[type=submit]{
+        font-size: 2em;
+    }
+
+    /* // Formulario contacto */
 }
