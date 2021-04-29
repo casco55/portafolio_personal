@@ -157,25 +157,25 @@
         <div class="container">
             <div class="row py-2 py-md-4 d-flex flex-column formulario-contacto">
                 <h2 class="mx-auto mb-2 mb-md-4">Contacto</h2>
-                <form method="get" action="">                    
+                <form method="post" action="" id="form-contacto">                    
                     <div class="row col-md-9 mx-auto d-flex flex-column">
-                        <div class="form-group my-1">
+                        <div class="form-group my-0">
                             <label for="nombre">Nombre*</label>
-                            <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre">
+                            <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre" onkeypress="return alfabetico(event);">
                         </div>
-                        <div class="form-group my-1">
+                        <div class="form-group my-0">
                             <label for="fono">Fono*</label>
-                            <input id="fono" class="form-control" type="text" name="fono" placeholder="Fono">
+                            <input id="fono" class="form-control" type="text" name="fono" maxlength="9" placeholder="Fono" onkeypress="return isNumber(event);">
                         </div>
-                        <div class="form-group my-1">
-                            <label for="mail">Mail*</label>
-                            <input id="mail" class="form-control" type="text" name="mail" placeholder="Mail">
+                        <div class="form-group my-0">
+                            <label for="email">Email*</label>
+                            <input id="email" class="form-control" type="text" name="email" placeholder="Email">
                         </div>                                               .
-                        <div class="form-group my-1">
+                        <div class="form-group my-0">
                             <label for="comentario">Comentario*</label>
-                            <textarea id="comentario" class="form-control" name="" rows="5" placeholder="Por favor, dejame tu comentario"></textarea>
+                            <textarea id="comentario" class="form-control" name="comentario" rows="5" placeholder="Por favor, dejame tu comentario"></textarea>
                         </div>  
-                        <input type="submit" class="btn btn mt-3 w-50 mx-auto boton-formulario" value="Enviar">                          
+                        <input type="submit" id="enviar" class="btn btn mt-3 w-50 mx-auto boton-formulario" value="Enviar">                          
                     </div>                                      
                 </form>
             </div>
@@ -192,11 +192,11 @@
                     <div class="d-flex flex-row justify-content-end">
                         
                         <div class="mx-2">
-                            <a href="https://www.facebook.com/render2web" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/juan-rivas-3809a81b0/" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
                         </div>        
 
                         <div class="mx-2">
-                            <a href="https://github.com/render2web" target="_blank" class="text-white"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/casco55" target="_blank" class="text-white"><i class="fab fa-github"></i></a>
                         </div>                                
                     </div>
                 </div>
@@ -206,10 +206,12 @@
 
    
     <!-- jquery / popper / bootstrap -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/validaciones.js"></script>
 </body>
 </html>
