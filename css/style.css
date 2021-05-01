@@ -84,6 +84,20 @@ span.error{
 }
 /* // Llamado a la acción */
 
+/* portafolio */
+
+.titulo{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.parrafo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em; 
+}
+
+/* // portafolio */
+
 /* Testimonios */
 .testimonios-general h2{
     font-family: 'Oswald', sans-serif;

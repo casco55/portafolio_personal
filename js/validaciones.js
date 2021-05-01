@@ -53,7 +53,7 @@ $(document).ready(function() {
           if(response == 1)
             {
              
-             alert('exito')
+                document.location.href = "exito.html";
             }
             else 
             {

@@ -83,46 +83,95 @@
 
     <section id="trabajos" class="mt-2 pt-md-5">
         <div class="container-fluid">
-            <div class="row d-flex-flex-column">
-                <h2 class="titulo mx-auto">Revisa algunos de mis trabajos</h2>
-                <p class="parrafo mx-auto col-lg-9 text-justify">Por favor revisa algunos de mis trabajos, al presionar en el botón de <cite>Visualizar trabajos</cite>, lo que desplegará una sección con estos. Espero que sean de tu agrado.</p>
-                <button class="d-block btn btn-primary w-100 boton" data-toggle="collapse" data-target="#portafolio"><i class="fas fa-folder-open fa-2x d-block"></i>Visualizar trabajos</button>
+            <div class="row d-flex flex-column">
+                <h2 class="mx-auto titulo">Revisa algunos de mis trabajos</h2>
+                <p class="parrafo mx-auto col-lg-9 text-justify">Por favor revisa algunos de mis trabajos, al presionar en el botón de <strong><cite>Visualizar trabajos</cite></strong>, lo que desplegará una sección con estos. Espero que sean de tu agrado. Si lo deseas, puedes dejarme un comentario en el formulario de contacto</p>
+                <button class="d-block btn btn-primary w-100 boton" data-toggle="collapse" data-target="#portafolio"><i class="fas fa-folder-open fa-6x d-block"></i><label class="titulo">Visualizar trabajos</label></button>
             </div>
         </div>
         <div id="portafolio" class="container-fluid collapse bg-dark">
             <div class="container">
-                <div class="row">
+                <div class="row d-none d-md-flex flex-md-row">
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light">Repositorio Github</h2>
+                        <h2 class="mx-auto text-light titulo">Repositorio Github</h2>
                         <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
                             <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
                         <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-light link">Ir al repositorio</a>
                     </div>
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light">ReactJS/Axios/API REST</h2>
+                        <h2 class="mx-auto text-light titulo">ReactJS/Axios/API REST</h2>
                         <a href="img/react.png" data-toggle="lightbox" data-title="ReactJS/Axios/API REST" data-footer="Aplicación de muestra construida con ReactJS, consumiento una API REST realizada por mi.">
                             <img src="img/react.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
                         <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                     </div>
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light">JR Desarrollos</h2>
+                        <h2 class="mx-auto text-light titulo">JR Desarrollos</h2>
                         <a href="img/jrdesarrollos.png" data-toggle="lightbox" data-title="JR Desarrollos" data-footer="Página de marca personal, actualmente en construcción">
                             <img src="img/jrdesarrollos.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
                         <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                     </div>
-                    <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light">Amperia</h2>
-                        <a href="img/fondo-banner.jpg" data-toggle="lightbox" data-title="Amperia" data-footer="Empresa de servicios eléctricos a gran escala">
-                            <img src="img/fondo-banner.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
-                        </a>
-                        <a href="https://amperia.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
-                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row d-block d-md-none">
+                <div class="col-md-9 mx-auto">                    
+                        <div id="slider-portafolio" class="carousel slide img-thumbnail py-5" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#slider-portafolio" data-slide-to="0"></li>
+                                <li data-target="#slider-portafolio" data-slide-to="1"></li>
+                                <li data-target="#slider-portafolio" data-slide-to="2"></li>
+                                
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="col-9 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-dark titulo">Repositorio Github</h2>
+                                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
+                                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                                        </a>
+                                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-dark link">Ir al repositorio</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-9 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-dark titulo">ReactJS/Axios/API REST</h2>
+                                        <a href="img/react.png" data-toggle="lightbox" data-title="ReactJS/Axios/API REST" data-footer="Aplicación de muestra construida con ReactJS, consumiento una API REST realizada por mi.">
+                                            <img src="img/react.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                                        </a>
+                                        <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-dark link">Ir a la página</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-9 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-dark titulo">JR Desarrollos</h2>
+                                        <a href="img/jrdesarrollos.png" data-toggle="lightbox" data-title="JR Desarrollos" data-footer="Página de marca personal, actualmente en construcción">
+                                            <img src="img/jrdesarrollos.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                                        </a>
+                                        <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-dark link">Ir a la página</a>
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <a class="carousel-control-prev" href="#slider-portafolio" data-slide="prev" role="button">
+                                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#slider-portafolio" data-slide="next" role="button">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>                    
                 </div>
             </div>
         </div>
+
+        
     </section>
 
     <section id="llamado-accion" class="oculto">
