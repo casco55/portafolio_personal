@@ -13,6 +13,9 @@
 .parrafo{
     transition: 2s;
 }
+.link:hover{
+    text-decoration: none;
+}
 
 /* // efectos */
 
@@ -146,6 +149,7 @@ span.error{
 /* Testimonios */
 
 /* Formulario contacto */
+
 .formulario-contacto h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;

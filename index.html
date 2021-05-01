@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
     <!-- ESTILOS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/e18c4fac07.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/wickedcss.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     
     <title>Bootstrap</title>
    
@@ -74,6 +76,50 @@
                 </div>
                 <div class="col-sm-12 col-lg-6 my-auto imagen-profesional oculto">
                     <img class="img-thumbnail img-fluid" src="img/blurred-background-coffee-cup-contemporary-908284.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trabajos" class="mt-2 pt-md-5">
+        <div class="container-fluid">
+            <div class="row d-flex-flex-column">
+                <h2 class="titulo mx-auto">Revisa algunos de mis trabajos</h2>
+                <p class="parrafo mx-auto col-lg-9 text-justify">Por favor revisa algunos de mis trabajos, al presionar en el botón de <cite>Visualizar trabajos</cite>, lo que desplegará una sección con estos. Espero que sean de tu agrado.</p>
+                <button class="d-block btn btn-primary w-100 boton" data-toggle="collapse" data-target="#portafolio"><i class="fas fa-folder-open fa-2x d-block"></i>Visualizar trabajos</button>
+            </div>
+        </div>
+        <div id="portafolio" class="container-fluid collapse bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 py-3 d-md-flex flex-column">
+                        <h2 class="mx-auto text-light">Repositorio Github</h2>
+                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
+                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                        </a>
+                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-light link">Ir al repositorio</a>
+                    </div>
+                    <div class="col-md-4 py-3 d-md-flex flex-column">
+                        <h2 class="mx-auto text-light">ReactJS/Axios/API REST</h2>
+                        <a href="img/react.png" data-toggle="lightbox" data-title="ReactJS/Axios/API REST" data-footer="Aplicación de muestra construida con ReactJS, consumiento una API REST realizada por mi.">
+                            <img src="img/react.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                        </a>
+                        <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
+                    </div>
+                    <div class="col-md-4 py-3 d-md-flex flex-column">
+                        <h2 class="mx-auto text-light">JR Desarrollos</h2>
+                        <a href="img/jrdesarrollos.png" data-toggle="lightbox" data-title="JR Desarrollos" data-footer="Página de marca personal, actualmente en construcción">
+                            <img src="img/jrdesarrollos.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                        </a>
+                        <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
+                    </div>
+                    <div class="col-md-4 py-3 d-md-flex flex-column">
+                        <h2 class="mx-auto text-light">Amperia</h2>
+                        <a href="img/fondo-banner.jpg" data-toggle="lightbox" data-title="Amperia" data-footer="Empresa de servicios eléctricos a gran escala">
+                            <img src="img/fondo-banner.jpg" class="img-fluid img-rounded img-thumbnail" alt="">
+                        </a>
+                        <a href="https://amperia.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -152,10 +198,12 @@
             </div>
         </div>
     </section>
+    
+
 
     <section id="contacto">
         <div class="container">
-            <div class="row py-2 py-md-4 d-flex flex-column formulario-contacto">
+            <div class="row py-2 py-md-5 d-flex flex-column formulario-contacto">
                 <h2 class="mx-auto mb-2 mb-md-4">Contacto</h2>
                 <form method="post" action="" id="form-contacto">                    
                     <div class="row col-md-9 mx-auto d-flex flex-column">
@@ -174,13 +222,15 @@
                         <div class="form-group my-0">
                             <label for="comentario">Comentario*</label>
                             <textarea id="comentario" class="form-control" name="comentario" rows="5" placeholder="Por favor, dejame tu comentario"></textarea>
-                        </div>  
-                        <input type="submit" id="enviar" class="btn btn mt-3 w-50 mx-auto boton-formulario" value="Enviar">                          
-                    </div>                                      
+                        </div> 
+                        <input type="submit" id="enviar" class="btn btn mt-3 w-50 mx-auto boton-formulario" value="Enviar">                
+                    </div>
+                                                          
                 </form>
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container-fluid bg-info">
@@ -213,5 +263,18 @@
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/validaciones.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+
+        $('.item').click(function(){
+            $('.collapse').collapse('hide');
+        });
+
+
+        $(document).on('click', '[data-toggle="lightbox"]', function(e){
+            e.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
 </html>
