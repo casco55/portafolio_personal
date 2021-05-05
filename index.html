@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     
-    <title>Bootstrap</title>
+    <title>Portafolio</title>
    
 </head>
 <body>
@@ -32,6 +32,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre mi <span class="sr-only">nosotros</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trabajos">Trabajos<span class="sr-only">trabajos</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonios">Testimonios <span class="sr-only">testimonios</span></a>
@@ -84,77 +87,96 @@
     <section id="trabajos" class="mt-2 pt-md-5">
         <div class="container-fluid">
             <div class="row d-flex flex-column">
-                <h2 class="mx-auto titulo">Revisa algunos de mis trabajos</h2>
-                <p class="parrafo mx-auto col-lg-9 text-justify">Por favor revisa algunos de mis trabajos, al presionar en el botón de <strong><cite>Visualizar trabajos</cite></strong>, lo que desplegará una sección con estos. Espero que sean de tu agrado. Si lo deseas, puedes dejarme un comentario en el formulario de contacto</p>
+                <h2 class="mx-auto titulo mt-2">Revisa algunos de mis trabajos</h2>
+                <p class="parrafo mx-auto col-md-9 text-justify mb-4">Por favor revisa algunos de mis trabajos, al presionar en el botón de <strong><cite>Visualizar trabajos</cite></strong>, lo que desplegará una sección con estos. Espero que sean de tu agrado. Si lo deseas, puedes dejarme un comentario en el formulario de contacto</p>
                 <button class="d-block btn btn-primary w-100 boton" data-toggle="collapse" data-target="#portafolio"><i class="fas fa-folder-open fa-6x d-block"></i><label class="titulo">Visualizar trabajos</label></button>
             </div>
         </div>
         <div id="portafolio" class="container-fluid collapse bg-dark">
             <div class="container">
-                <div class="row d-none d-md-flex flex-md-row">
+                <div class="row d-none d-lg-flex flex-md-row">
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light titulo">Repositorio Github</h2>
-                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
-                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                        <h2 class="mx-auto text-light titulo-portafolio">Amperia - Gestión</h2>
+                        <a href="img/amperiagestion.png" data-toggle="lightbox" data-title="Amperia - Gestión" data-footer="Aplicación web para la gestión de negocios, realizada en solitario para Amperi Group">
+                            <img src="img/amperiagestion.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
-                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-light link">Ir al repositorio</a>
+                        <a href="https://amperia.cl/loginamperia" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                     </div>
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light titulo">ReactJS/Axios/API REST</h2>
+                        <h2 class="mx-auto text-light titulo-portafolio">ReactJS/Axios/API REST</h2>
                         <a href="img/react.png" data-toggle="lightbox" data-title="ReactJS/Axios/API REST" data-footer="Aplicación de muestra construida con ReactJS, consumiento una API REST realizada por mi.">
                             <img src="img/react.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
                         <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                     </div>
                     <div class="col-md-4 py-3 d-md-flex flex-column">
-                        <h2 class="mx-auto text-light titulo">JR Desarrollos</h2>
+                        <h2 class="mx-auto text-light titulo-portafolio">JR Desarrollos</h2>
                         <a href="img/jrdesarrollos.png" data-toggle="lightbox" data-title="JR Desarrollos" data-footer="Página de marca personal, actualmente en construcción">
                             <img src="img/jrdesarrollos.png" class="img-fluid img-rounded img-thumbnail" alt="">
                         </a>
                         <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                     </div>
+                    <div class="col-md-4 py-3 d-md-flex flex-column">
+                        <h2 class="mx-auto text-light titulo-portafolio">Repositorio Github</h2>
+                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
+                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                        </a>
+                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-light link">Ir al repositorio</a>
+                    </div>
+                    
                     
                 </div>
             </div>
 
-            <div class="row d-block d-md-none">
-                <div class="col-md-9 mx-auto">                    
-                        <div id="slider-portafolio" class="carousel slide img-thumbnail py-5" data-ride="carousel">
-                            <ol class="carousel-indicators">
+            <div class="row d-block d-lg-none">
+                <div class="col-md-12 mx-auto">                    
+                        <div id="slider-portafolio" class="carousel slide  py-5 bg-transparent" data-ride="carousel">
+                            <!-- <ol class="carousel-indicators">
                                 <li class="active" data-target="#slider-portafolio" data-slide-to="0"></li>
                                 <li data-target="#slider-portafolio" data-slide-to="1"></li>
                                 <li data-target="#slider-portafolio" data-slide-to="2"></li>
+                                <li data-target="#slider-portafolio" data-slide-to="3"></li>
                                 
-                            </ol>
+                            </ol> -->
                             <div class="carousel-inner">
+
+
                                 <div class="carousel-item active">
-                                    <div class="col-9 mx-auto d-flex flex-column">
-                                        <h2 class="mx-auto text-dark titulo">Repositorio Github</h2>
-                                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
-                                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                                    <div class="col-12 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-light titulo-portafolio mt-3">Amperia - Gestión</h2>
+                                        <a href="img/amperiagestion.png" data-toggle="lightbox" data-title="Amperia - Gestión" data-footer="Aplicación web para la gestión de negocios, construida para Amperia Group.">
+                                            <img src="img/amperiagestion.png" class="img-fluid img-rounded img-thumbnail" alt="">
                                         </a>
-                                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-dark link">Ir al repositorio</a>
+                                        <a href="https://amperia.cl/loginamperia" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-9 mx-auto d-flex flex-column">
-                                        <h2 class="mx-auto text-dark titulo">ReactJS/Axios/API REST</h2>
+                                    <div class="col-12 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-light titulo-portafolio mt-3">ReactJS/Axios/API REST</h2>
                                         <a href="img/react.png" data-toggle="lightbox" data-title="ReactJS/Axios/API REST" data-footer="Aplicación de muestra construida con ReactJS, consumiento una API REST realizada por mi.">
                                             <img src="img/react.png" class="img-fluid img-rounded img-thumbnail" alt="">
                                         </a>
-                                        <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-dark link">Ir a la página</a>
+                                        <a href="https://apireact.jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-9 mx-auto d-flex flex-column">
-                                        <h2 class="mx-auto text-dark titulo">JR Desarrollos</h2>
+                                    <div class="col-12 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-light titulo-portafolio mt-3">JR Desarrollos</h2>
                                         <a href="img/jrdesarrollos.png" data-toggle="lightbox" data-title="JR Desarrollos" data-footer="Página de marca personal, actualmente en construcción">
                                             <img src="img/jrdesarrollos.png" class="img-fluid img-rounded img-thumbnail" alt="">
                                         </a>
-                                        <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-dark link">Ir a la página</a>
+                                        <a href="https://jrdesarrollos.cl" target="_blank" class="mx-auto mt-1 text-light link">Ir a la página</a>
                                     </div>
                                 </div>
-                                
+                                <div class="carousel-item">
+                                    <div class="col-12 mx-auto d-flex flex-column">
+                                        <h2 class="mx-auto text-light titulo-portafolio mt-3">Repositorio Github</h2>
+                                        <a href="img/repositorio.png" data-toggle="lightbox" data-title="Repositorio Github" data-footer="Por favor, visita mi repositorio de Github">
+                                            <img src="img/repositorio.png" class="img-fluid img-rounded img-thumbnail" alt="">
+                                        </a>
+                                        <a href="https://github.com/casco55?tab=repositories" target="_blank" class="mx-auto mt-1 text-light link">Ir al repositorio</a>
+                                    </div>
+                                </div>
                                 
                                 
                             </div>
@@ -207,20 +229,20 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="testimonio py-2 d-flex flex-column">
-                                        <p class="mx-auto w-75 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas optio cumque tempore quidem assumenda, ullam fugiat sint, quae, dicta hic facilis et numquam nam asperiores omnis corporis praesentium quos a.</p>
+                                        <p class="mx-auto w-75 text-center">"Nuestra aplicación nos permite mantener un control de todas nuestras gestiones y funciones, administrativas y técnicas. Pero, sobre todo, Juan entendió con facilidad nuestro negocio y nos entregó un programa fácil de usar."</p>
                                         <div class="d-flex flex-column w-75 align-self-end mr-5">
-                                        <cite class="align-self-end">Juan Rivas</cite>
-                                        <small class="align-self-end text-muted">Amperia Group SPA</small>
+                                        <cite class="align-self-end">Waldo Flores</cite>
+                                        <small class="align-self-end text-muted">Gerente - Amperia Group SPA</small>
                                         </div>                                  
 
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="testimonio py-2 d-flex flex-column">
-                                        <p class="mx-auto w-75 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas optio cumque tempore quidem assumenda, ullam fugiat sint, quae, dicta hic facilis et numquam nam asperiores omnis corporis praesentium quos a.</p>
+                                        <p class="mx-auto w-75 text-center">"Hemos optimizado en gran manera el tiempo dedicado a la gestión de nuestros proyectos, ya que accedemos facilmente a los datos y a los reportes de avance. Esto nos permite una mayor libertad en lo comercial y operacional." </p>
                                         <div class="d-flex flex-column w-75 align-self-end mr-5">
-                                        <cite class="align-self-end">Juan Rivas</cite>
-                                        <small class="align-self-end text-muted">Amperia Group SPA</small>
+                                        <cite class="align-self-end">Carlos Moya</cite>
+                                        <small class="align-self-end text-muted">Gerente comercial - Rodas</small>
                                         </div>
                                     </div>
                                 </div>
@@ -284,18 +306,16 @@
     <footer>
         <div class="container-fluid bg-info">
             <div class="row">
-                <div class="col-6">
-                    <img src="img/jrdicon.png" alt="ícono jrdesarrollos">
-                </div>
-                <div class="col-6 align-self-center">
+                
+                <div class="mx-auto py-3">
                     <div class="d-flex flex-row justify-content-end">
                         
                         <div class="mx-2">
-                            <a href="https://www.linkedin.com/in/juan-rivas-3809a81b0/" target="_blank" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/juan-rivas-3809a81b0/" target="_blank" class="text-white"><i class="fab fa-3x fa-linkedin-in"></i></a>
                         </div>        
 
                         <div class="mx-2">
-                            <a href="https://github.com/casco55" target="_blank" class="text-white"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/casco55" target="_blank" class="text-white"><i class="fab fa-3x fa-github"></i></a>
                         </div>                                
                     </div>
                 </div>

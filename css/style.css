@@ -95,6 +95,11 @@ span.error{
     font-family: 'Oswald', sans-serif;
     font-size: 1em; 
 }
+.titulo-portafolio{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
 
 /* // portafolio */
 
@@ -215,6 +220,20 @@ textarea{
     }
     /* // Descripción profesional */
 
+    /* portafolio */
+
+    .titulo{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 2.5em;
+    }
+    .parrafo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2em; 
+    }
+
+    /* // portafolio */
+
     /* Llamado a la acción */
     .accion h1{
         font-size: 2.5em;
@@ -271,6 +290,20 @@ textarea{
         font-size: 1.3em;
     }
     /* // Descripción profesional */
+
+    /* portafolio */
+
+    .titulo{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 2.8em;
+    }
+    .parrafo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.4em; 
+    }
+
+    /* // portafolio */
 
     /* Llamado a la acción */
     .accion h1{
@@ -339,6 +372,20 @@ textarea{
         font-size: 1.3em;
     }
     /* // Descripción profesional */
+
+    /* portafolio */
+
+    .titulo{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 600;
+        font-size: 3.1em;
+    }
+    .parrafo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5em; 
+    }
+
+    /* // portafolio */
 
     /* Llamado a la acción */
     .accion h1{
